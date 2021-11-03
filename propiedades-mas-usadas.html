@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            width: 50%;
+            height: 600px;
+            background: lightcyan;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 2px 1px 7px 1px rgb(189, 212, 216);
+        }
+        .card img {
+            width: 100%;
+            height: 260px;
+            border-radius: 20px;
+        }
+        .card p {
+            text-align: center;
+            font-size: 30px;
+        }
+        .card .p_art::after {
+            content: "❣";
+        }
+        .card .p_art::before {
+            content: "❣";
+        }
+        .card .p_love:nth-child(3) {
+            color: turquoise;
+            font-weight: bold;
+        }
+        .container_buttons {
+            display: flex;
+            justify-content: center;
+        }
+        .button_1 {
+            margin: 10px;
+            border-radius: 10px;
+            width: 35%;
+            height: 35px;
+            cursor: pointer;
+            background-color: lightpink;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+            border: none;
+            box-shadow: 2px 1px 7px 1px rgb(189, 212, 216);
+        }
+        .button_2 {
+            margin: 10px;
+            border-radius: 10px;
+            width: 35%;
+            height: 35px;
+            cursor: pointer;
+            background-color: lightpink;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+            border: none;
+            box-shadow: 2px 1px 7px 1px rgb(189, 212, 216);
+        }
+        .div_more {
+            background-color: lightpink;
+            display: flexbox;
+            position: relative;
+            bottom: -35px;
+            height: 58px;
+        }
+        .div_more p {
+            padding: 9px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 25px;
+            text-align: center;
+        }
+        .div_more p::after {
+            content: "💞";
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <img src="https://png.pngtree.com/element_our/20190522/ourlarge/pngtree-female-silhouette-image_1072124.jpg" alt="">
+            <p class="p_art">Art and love</p>
+            <p class="p_love">Love</p>
+            <div class="container_buttons">
+                <button class="button_1">Love</button>
+                <button class="button_2">Art</button>
+            </div>
+            <div class="div_more">
+                <p>Read more</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
